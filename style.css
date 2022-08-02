@@ -1,0 +1,173 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* General */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 120vh;
+    position: relative;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: hsl(257, 40%, 49%);
+    padding: 2rem;
+}
+/* Header */
+
+.logo{
+    width: 40%;
+}
+
+/* Main */
+.content-image{
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.info-container {
+    padding-top: 3rem;
+    color: rgb(255, 242, 254);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container h3 {
+    font-size: 1.4em;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.info-container p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.95em;
+    padding-bottom: 2rem;
+}
+
+.info-container a{
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 0.8em;
+    padding: 0.7rem 5rem;
+    font-weight: 400;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.info-container a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: rgb(255, 255, 255);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.icons ion-icon {
+    color: white;
+    background-color: hsl(257, 40%, 49%);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.icons ion-icon:hover {
+    color: rgb(255, 196, 0);
+    border-color: rgb(255, 196, 0);
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: black;
+    position: absolute;
+    bottom: 1%;
+    right: 0%;
+    left: 0%;
+}
+.attribution a { 
+    color: limegreen;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    body{
+        height: 100vh;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px){
+    body {
+        height: 100vh;
+        background-image: url(./images/bg-desktop.svg);
+        background-size: cover;
+        padding: 3rem;
+    }
+
+    .logo{
+        width: 20%;
+        
+    }
+
+    .content-image{
+        width: 60%;
+        padding-top: 5rem;
+    }
+
+    .main-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .info-container {
+        padding: 2rem;
+    }
+
+    .info-container h3 {
+        font-size: 2.5em;
+        word-wrap: normal;
+        width: 12em;
+        text-align: start;
+        padding: 0;
+    }
+
+    .info-container p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 0.95em;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+    }
+
+    .icons {
+        justify-content: flex-end;
+        margin-top: 2rem;
+    }
+
+}
