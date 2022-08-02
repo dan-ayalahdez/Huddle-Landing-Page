@@ -111,16 +111,8 @@ body {
 
 /* Media Queries */
 
-/* Tablet */
-@media only screen and (min-width: 768px){
-    body{
-        height: 100vh;
-    }
-
-}
-
 /* Desktop */
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1440px){
     body {
         height: 100vh;
         background-image: url(./images/bg-desktop.svg);
